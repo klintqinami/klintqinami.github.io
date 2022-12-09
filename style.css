@@ -1,0 +1,6 @@
+@media (max-width: 780px) {
+    table.headertable {
+        vertical-align: center;
+        width: 100%;
+    }
+}

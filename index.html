@@ -114,6 +114,33 @@
         </article>
       </section>
 
+      <section aria-labelledby="talks">
+        <h2 id="talks">Talks</h2>
+
+        <article class="card pub-item">
+          <div class="item-main">
+            <p class="card-title">Compiler-Driven Performance Optimization for Neural Networks</p>
+            <p class="card-meta">
+              Klint Qinami — Meta
+              <br />
+              <em>CDP Workshop 2025</em>
+            </p>
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <p class="card-meta">
+                We present compiler optimization techniques developed for MTIA's next-generation architecture, which delivers 3x performance improvement over the previous generation. Performance evaluation on production ranking and recommendation models demonstrates significant improvements in memory utilization and overall system efficiency. The techniques contribute to MTIA's 6x model serving throughput improvement and 1.5x performance-per-watt gains over the previous generation, enabling Meta to efficiently serve models ranging from low-complexity to high-complexity recommendation workloads with 10x-100x differences in model size. We describe a multi-stage compilation pipeline that leverages PyTorch's Inductor backend while introducing novel graph-level optimizations tailored for AI accelerators. Our approach addresses several key challenges: (1) tensor view elimination that converts explicit layout transformations into implicit tensor view manipulations, (2) memory-aware operator fusion strategies that consider both computational efficiency and memory hierarchy constraints, and (3) dynamic shape handling that maintains performance optimization paths despite runtime variability.
+              </p>
+              <p class="card-meta">
+                The compiler uses memory placement strategies that automatically partition tensors between fast on-chip SRAM and external DRAM based on access patterns, lifetime analysis, and fallback strategies. When SRAM capacity is exceeded, our spilling mechanisms intelligently migrate data while minimizing performance impact. We also employ scheduling and tiling optimizations that decompose large tensor operations into smaller blocks that fit within memory constraints while maximizing data reuse. Additionally, graph-level transformations simplify and canonicalize graphs, eliminate redundant operations, and support both vertical and horizontal fusions to improve compute density.
+              </p>
+            </details>
+          </div>
+          <div class="item-links">
+            <a href="https://cdp-workshop.github.io/CDP/program/#NEURAL">Program</a>
+          </div>
+        </article>
+      </section>
+
       <section aria-labelledby="ug">
         <h2 id="ug">Undergraduate Work</h2>
 

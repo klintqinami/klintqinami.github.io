@@ -186,8 +186,8 @@ main > section {
 }
 
 main > section + section {
-  margin-top: 28px;
-  padding-top: 22px;
+  margin-top: 12px;
+  padding-top: 6px;
 }
 
 .card {
@@ -207,6 +207,32 @@ main > section + section {
 .card-title { font-weight: 700; margin: 0 0 6px 0; }
 
 .card-meta { margin: 0 0 10px 0; color: var(--muted); }
+
+.abstract {
+  margin-top: 6px;
+}
+
+.abstract summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+}
+
+.abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract summary::before {
+  content: "+";
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--accent);
+}
+
+.abstract[open] summary::before {
+  content: "–";
+}
 
 .item-list {
   list-style: none;

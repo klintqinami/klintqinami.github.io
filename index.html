@@ -1,255 +1,241 @@
-<!DOCTYPE html>
-<html>
-
-<!-- Some fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-	rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-	rel="stylesheet">
-
+<!doctype html>
+<html lang="en">
 <head>
-	<meta name="Author" content="Klint Qinami">
-	<meta name="description" content="Klint Qinami is a Software Engineer">
-	<meta name="keywords" content="Klint, Qinami, projects, cv, resume,
-	publications, student, PhD, Princeton, computer, science, vision, robotics,
-	graphics, computer vision, researcher, Qualcomm, compilers, Hexagon" lang="en-us">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Klint Qinami | Software Engineer</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="./images/kqinami.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Klint Qinami | Software Engineer</title>
+  <meta name="author" content="Klint Qinami" />
+  <meta name="description" content="Klint Qinami is a software engineer focused on machine learning systems, compilers, frameworks, and kernels." />
+  <meta name="keywords" content="Klint Qinami, machine learning systems, compilers, PyTorch, MTIA, Qualcomm, ML compilers, DSP, research, publications" />
+
+  <!-- Social previews -->
+  <meta property="og:title" content="Klint Qinami | Software Engineer" />
+  <meta property="og:description" content="Machine learning systems engineer working on compilers, frameworks, and kernels." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./images/kqinami.png" />
+
+  <link rel="icon" href="./images/kqinami.png" />
+
+  <!-- Fonts (serif + sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400..700&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: basic structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Klint Qinami",
+    "jobTitle":"Software Engineer",
+    "worksFor":{"@type":"Organization","name":"Meta Platforms, Inc."},
+    "image":"./images/kqinami.png",
+    "sameAs":[
+      "https://www.linkedin.com/in/klint-qinami/",
+      "https://github.com/klintqinami"
+    ]
+  }
+  </script>
 </head>
 
-<style>
-	body {
-		padding-top: 5vw;
-		padding-bottom: 5vw;
-		padding-left: 20vw;
-		padding-right: 20vw;
-	}
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-	/* Media query for devices with a max width of 768px (commonly tablets
-			and mobile devices) */
-	@media (max-width: 768px) {
-		body {
-			padding-top: 5vw;
-			padding-bottom: 5vw;
-			padding-left: 10vw;
-			padding-right: 10vw;
-		}
-	}
+  <div class="container">
+	<header class="topbar" aria-label="Header">
+		<img class="avatar-sm" src="./images/kqinami.png" width="144" height="144" alt="Portrait of Klint Qinami" />
+	  
+		<div class="topbar-text">
+		  <h1>Klint Qinami</h1>
+		  <p class="subtitle">Software Engineer · Meta Platforms, Inc.</p>
+		  <nav class="topbar-links" aria-label="Primary links">
+			<a href="./pdfs/kqinami_cv.pdf">CV</a>
+			<a href="https://www.linkedin.com/in/klint-qinami/" rel="me">LinkedIn</a>
+			<span id="email" class="email" data-user="klint.qinami" data-domain="gmail.com">
+			  first name plus last name at mail client dot com
+			</span>
+		  </nav>
+		</div>
+	  </header>
+	  
 
-	/* Media query for devices with a max width of 480px (commonly mobile
-			devices) */
-	@media (max-width: 480px) {
-		body {
-			padding-top: 2vw;
-			padding-bottom: 2vw;
-			padding-left: 2vw;
-			padding-right: 2vw;
-		}
-	}
-</style>
+    <main id="content">
+      <section aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p class="lead">
+          I am a machine learning systems engineer at Meta, working on compilers, frameworks,
+          and kernels for in-house training and inference accelerators (MTIA), as part of the
+          PyTorch AI framework organization. Previously, at Qualcomm, I worked on machine learning
+          compilers targeting wide-vector VLIW DSP accelerators. Before that, I was at Reservoir Labs,
+          working on compiler toolchains for machine learning, polyhedral compilers, and software verification
+          (before it was acquired by Qualcomm). I was briefly a Ph.D. student at Princeton, working on bias
+          mitigation in machine learning. As an undergrad at Columbia, I worked on computer graphics,
+          physics-based simulation, and geometry processing. I really like performance optimization in the
+          context of large, practical systems.
+        </p>
+      </section>
 
-<body bgcolor="#FFFFFF" text="#000000" link="#8d8df3" vlink="#8d8df3">
+      <section aria-labelledby="pubs">
+        <h2 id="pubs">Publications</h2>
 
-	<table class="headertable" border=0 cellpadding=0>
-		<tr>
-			<td valign=top align="right">
-				<img src="./images/kqinami.png" width=200>
-			</td>
-			<td valign=top style="padding-left: 1vw">
-				<font size="+2">Klint Qinami</font>
-				<br>
-				<font size="+1"><i>Software Engineer</i></font>
-				<br>
-				Meta Platforms, Inc.
-				<br>
-				<font id="abcde">
-					first name plus last name at mail client dot com
-				</font>
-				<br>
-				<a href="./pdfs/kqinami_cv.pdf">CV</a>
-				/
-				<a href="https://www.linkedin.com/in/klint-qinami/">LinkedIn</a>
-			</td>
-		</tr>
-	</table>
+        <article class="card pub-item">
+          <div class="item-main">
+            <p class="card-title">
+              Towards Fairness in Visual Recognition: Effective Strategies for Bias Mitigation
+            </p>
+            <p class="card-meta">
+              Zeyu Wang, <strong>Klint Qinami</strong>, Ioannis Karakozis, Kyle Genova, Prem Nair, Kenji Hata, and Olga Russakovsky.
+              <br />
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020.
+            </p>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1911.11834">arXiv</a>
+          </div>
+        </article>
 
-	<h2>About</h2>
-	<p align="justify">
-		I am a machine learning systems engineer at Meta, working on compilers,
-		frameworks, and kernels for in-house training and inference
-		accelerators (MTIA), as part of the PyTorch AI framework organization.
-		Previously, at Qualcomm, I worked on machine learning compilers,
-		targetting wide-vector VLIW DSP accelerators. Before that, I was at
-		Reservoir Labs, working on compiler toolchains for machine learning,
-		polyhedral compilers, and software verification (before it was acquired
-		by Qualcomm). I was briefly a Ph.D. student at Princeton, working on
-		bias mitigation in machine learning. As an undergrad at Columbia, I
-		worked on computer graphics, physics-based simulation, and geometry
-		processing. I really like performance optimization in the context of
-		large, practical systems.
-	</p>
+        <article class="card pub-item">
+          <div class="item-main">
+            <p class="card-title">
+              Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy
+            </p>
+            <p class="card-meta">
+              Kaiyu Yang, <strong>Klint Qinami</strong>, Li Fei-Fei, Jia Deng, and Olga Russakovsky.
+              <br />
+              <em>ACM Conference on Fairness, Accountability and Transparency (FAccT)</em>, 2020.
+            </p>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1912.07726">arXiv</a>
+          </div>
+        </article>
+      </section>
 
-	<h2>Publications</h2>
-	<p align="justify">
-		Zeyu Wang, <b>Klint Qinami</b>, Ioannis Karakozis, Kyle Genova, Prem
-		Nair, Kenji Hata, and Olga Russakovsky.
-		<a href="https://arxiv.org/abs/1911.11834">Towards Fairness in Visual
-			Recognition: Effective Strategies for Bias Mitigation</a>. In
-		<em>
-			IEEE/CVF Conference on Computer Vision and Pattern Recognition
-			(CVPR)</em>, 2020.
-	</p>
+      <section aria-labelledby="ug">
+        <h2 id="ug">Undergraduate Work</h2>
 
-	<p align="justify">
-		Kaiyu Yang, <b>Klint Qinami</b>, Li Fei-Fei, Jia Deng, and Olga
-		Russakovsky.
-		<a href="https://arxiv.org/abs/1912.07726">
-			Towards Fairer Datasets: Filtering and Balancing the Distribution of
-			the People Subtree in the ImageNet Hierarchy</a>. In
-		<em>
-			ACM Conference on Fairness, Acountability and Transparency (ACM
-			FAccT)</em>, 2020.
-	</p>
+        <h3>Computer Science</h3>
+        <ul class="item-list">
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">QClang: High-Level Quantum Computing Language</span>
+              <span class="item-meta">Klint Qinami, Connor Abbott (2018)</span>
+            </div>
+            <div class="item-links">
+              <a href="./pdfs/qclang_report.pdf">PDF</a>
+              <a href="./pdfs/qclang_src.zip">Source</a>
+              <a href="https://github.com/KlintQinami/QClang">GitHub</a>
+            </div>
+          </li>
 
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Quantifying Geometric Entanglement: the Linking Number of Two Open Curves</span>
+              <span class="item-meta">Klint Qinami, Eitan Grinspun (2017)</span>
+            </div>
+            <div class="item-links">
+              <a href="./pdfs/link_num_writeup.pdf">PDF</a>
+            </div>
+          </li>
 
-	<h2>Undergraduate Work</h2>
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Blis: Better Language for Image Stuff</span>
+              <span class="item-meta">Connor Abbott, Wendy Pan, Klint Qinami, Jason Vaccario (2017)</span>
+            </div>
+            <div class="item-links">
+              <a href="./pdfs/blis_report.pdf">PDF</a>
+              <a href="./pdfs/blis_src.tar.gz">Source</a>
+              <a href="https://github.com/KlintQinami/Blis">GitHub</a>
+            </div>
+          </li>
+        </ul>
 
-	<h3>Computer Science</h3>
-	<p>
-		QClang: High-Level Quantum Computing Language
-		<br>
-		Klint Qinami, Connor Abbott (2018)
-		<br>
-		<a href="./pdfs/qclang_report.pdf">[pdf]</a>
-		<a href="./pdfs/qclang_src.zip">[src]</a>
-		<a href="https://github.com/KlintQinami/QClang">[github]</a>
-	</p>
+        <h3>Math</h3>
+        <ul class="item-list">
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Algebraic Topology</span>
+            </div>
+            <div class="item-links"><a href="./pdfs/algebraic_topology_notes.pdf">PDF</a></div>
+          </li>
 
-	<p>
-		Quantifying Geometric Entanglement: the Linking Number of Two Open
-		Curves
-		<br>
-		Klint Qinami, Eitan Grinspun (2017)
-		<br>
-		<a href="./pdfs/link_num_writeup.pdf">[pdf]</a>
-	<p>
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Point-Set Topology</span>
+            </div>
+            <div class="item-links"><a href="./pdfs/topology_notes.pdf">PDF</a></div>
+          </li>
 
-	<p>
-		Blis: Better Language for Image Stuff
-		<br>
-		Connor Abbott, Wendy Pan, Klint Qinami, Jason Vaccario (2017)
-		<br>
-		<a href="./pdfs/blis_report.pdf">[pdf]</a>
-		<a href="./pdfs/blis_src.tar.gz">[src]</a>
-		<a href="https://github.com/KlintQinami/Blis">[github]</a>
-	</p>
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Modern Algebra</span>
+            </div>
+            <div class="item-links"><a href="./pdfs/algebra_notes.pdf">PDF</a></div>
+          </li>
+        </ul>
 
-	<h3>Math</h3>
+        <h3>Physics</h3>
+        <ul class="item-list">
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Superconductivity Lab Software</span>
+            </div>
+            <div class="item-links">
+              <a href="./pdfs/supercond_manual.pdf">Manual</a>
+              <a href="./pdfs/supercond_src.zip">Source</a>
+              <a href="https://github.com/KlintQinami/Superconductivity-Experiment">GitHub</a>
+            </div>
+          </li>
 
-	<p>
-		Algebraic Topology
-		<br>
-		Klint Qinami (2018)
-		<br>
-		<a href="./pdfs/algebraic_topology_notes.pdf">[pdf]</a>
-	</p>
+          <li class="item">
+            <div class="item-main">
+              <span class="item-title">Quantum Hall Effect Software</span>
+            </div>
+            <div class="item-links">
+              <a href="./pdfs/qhe_manual.pdf">Manual</a>
+              <a href="./pdfs/qhe_src.zip">Source</a>
+              <a href="https://github.com/KlintQinami/Quantum-Hall-Effect-Software">GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-	<p>
-		Point-Set Topology
-		<br>
-		Klint Qinami (2017)
-		<br>
-		<a href="./pdfs/topology_notes.pdf">[pdf]</a>
-	</p>
+      <section aria-labelledby="misc">
+        <h2 id="misc">Miscellaneous links</h2>
+        <ul class="dash-list">
+          <li><a href="https://github.com/klintqinami" rel="me">GitHub</a></li>
+          <li><a href="https://math.stackexchange.com/users/318882/klint-qinami?tab=profile">Stack Exchange</a></li>
+        </ul>
+      </section>
+    </main>
 
-	<p>
-		Modern Algebra
-		<br>
-		Klint Qinami (2016)
-		<br>
-		<a href="./pdfs/algebra_notes.pdf">[pdf]</a>
-	</p>
+    <footer class="footer"></footer>
+  </div>
 
-	<h3>Physics</h3>
-	<p>
-		Superconductivity Lab Software
-		<br>
-		Klint Qinami
-		<br>
-		<a href="./pdfs/supercond_manual.pdf">[manual]</a>
-		<a href="./pdfs/supercond_src.zip">[src]</a>
-		<a href="https://github.com/KlintQinami/Superconductivity-Experiment">
-			[github]
-		</a>
-		<br>
-	</p>
+  <script>
+    // Email: show text + make it clickable without writing the full string in HTML
+    (function () {
+      var el = document.getElementById("email");
+      if (!el) return;
+      var user = el.getAttribute("data-user");
+      var domain = el.getAttribute("data-domain");
+      if (!user || !domain) return;
 
-	<p>
-		Quantum Hall Effect Software
-		<br>
-		Klint Qinami
-		<br>
-		<a href="./pdfs/qhe_manual.pdf">[manual]</a>
-		<a href="./pdfs/qhe_src.zip">[src]</a>
-		<a href="https://github.com/KlintQinami/Quantum-Hall-Effect-Software">
-			[github]
-		</a>
-	</p>
+      var address = (user + "@" + domain).toLowerCase();
+      el.textContent = address;
 
-	<h2 id="miscellaneous-links">Miscellaneous links</h2>
-	<style>
-		ul {
-			margin: 0;
-			padding-left: 0;
-		}
+      // Optional: wrap in mailto link
+      var a = document.createElement("a");
+      a.href = "mailto:" + address;
+      a.textContent = address;
+      a.className = "email-link";
+      el.replaceWith(a);
 
-		ul.dashed {
-			list-style-type: none;
-		}
-
-		ul.dashed>li {
-			text-indent: -5px;
-		}
-
-		ul.dashed>li:before {
-			content: "-";
-			text-indent: -5px;
-		}
-	</style>
-	<ul class="dashed">
-		<li>
-			<a href="https://github.com/klintqinami">GitHub</a>
-		</li>
-		<li>
-			<a href="https://math.stackexchange.com/users/318882/klint-qinami?tab=profile">
-				Stack Exchange
-			</a>
-		</li>
-	</ul>
-
-	<!-- Obscure the email a bit to make it harder to parse by bots -->
-	<script>
-		var username1 = "klint";
-		var username2 = ".qinami@"
-		var hostname1 = "gm";
-		var hostname2 = "ail";
-		var suffix = ".com"
-		var linktext = username1 + username2 + hostname1 + hostname2 + suffix;
-		document.getElementById("abcde").innerHTML = linktext;
-	</script>
-
+    })();
+  </script>
 </body>
-
 </html>

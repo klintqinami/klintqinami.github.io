@@ -63,7 +63,7 @@
 	  
 
     <main id="content">
-      <section aria-labelledby="about">
+      <section class="about" aria-labelledby="about">
         <h2 id="about">About</h2>
         <p class="lead">
           I am a machine learning systems engineer at Meta, working on compilers, frameworks,
@@ -80,66 +80,37 @@
 
       <section aria-labelledby="projects">
         <h2 id="projects">Projects</h2>
-        <ul class="item-list">
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">SESE Regions</span>
-              <span class="item-meta">Python implementation of the Johnson-Pearson-Pingali algorithm for canonical single-entry/single-exit regions and program structure trees, with Graphviz exporters for CFG and region visualization.</span>
-            </div>
-            <div class="item-links">
-              <a href="https://github.com/klintqinami/sese-regions/">GitHub</a>
-            </div>
+        <ul class="compact-list">
+          <li>
+            <strong><a href="https://github.com/klintqinami/sese-regions/">SESE Regions.</a></strong>
+            Python implementation of the Johnson-Pearson-Pingali algorithm for canonical single-entry/single-exit regions and program structure trees, with Graphviz exporters for CFG and region visualization.
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="pubs">
         <h2 id="pubs">Publications</h2>
-
-        <article class="card pub-item">
-          <div class="item-main">
-            <p class="card-title">
-              Towards Fairness in Visual Recognition: Effective Strategies for Bias Mitigation
-            </p>
-            <p class="card-meta">
-              Zeyu Wang, <strong>Klint Qinami</strong>, Ioannis Karakozis, Kyle Genova, Prem Nair, Kenji Hata, and Olga Russakovsky.
-              <br />
-              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020.
-            </p>
-          </div>
-          <div class="item-links">
-            <a href="https://arxiv.org/abs/1911.11834">arXiv</a>
-          </div>
-        </article>
-
-        <article class="card pub-item">
-          <div class="item-main">
-            <p class="card-title">
-              Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy
-            </p>
-            <p class="card-meta">
-              Kaiyu Yang, <strong>Klint Qinami</strong>, Li Fei-Fei, Jia Deng, and Olga Russakovsky.
-              <br />
-              <em>ACM Conference on Fairness, Accountability and Transparency (FAccT)</em>, 2020.
-            </p>
-          </div>
-          <div class="item-links">
-            <a href="https://arxiv.org/abs/1912.07726">arXiv</a>
-          </div>
-        </article>
+        <ul class="compact-list">
+          <li>
+            <strong><a href="https://arxiv.org/abs/1911.11834">Towards Fairness in Visual Recognition: Effective Strategies for Bias Mitigation.</a></strong>
+            Zeyu Wang, <strong>Klint Qinami</strong>, Ioannis Karakozis, Kyle Genova, Prem Nair, Kenji Hata, and Olga Russakovsky.
+            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020.
+          </li>
+          <li>
+            <strong><a href="https://arxiv.org/abs/1912.07726">Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy.</a></strong>
+            Kaiyu Yang, <strong>Klint Qinami</strong>, Li Fei-Fei, Jia Deng, and Olga Russakovsky.
+            <em>ACM Conference on Fairness, Accountability and Transparency (FAccT)</em>, 2020.
+          </li>
+        </ul>
       </section>
 
       <section aria-labelledby="talks">
         <h2 id="talks">Talks</h2>
-
-        <article class="card pub-item">
-          <div class="item-main">
-            <p class="card-title">Compiler-Driven Performance Optimization for Neural Networks</p>
-            <p class="card-meta">
-              Klint Qinami — Meta
-              <br />
-              <em>CDP Workshop 2025</em>
-            </p>
+        <ul class="compact-list">
+          <li>
+            <strong><a href="https://cdp-workshop.github.io/CDP/program/#NEURAL">Compiler-Driven Performance Optimization for Neural Networks.</a></strong>
+            Klint Qinami. <em>CDP Workshop 2025</em>.
+            Compiler optimization techniques developed for MTIA's next-generation architecture.
             <details class="abstract">
               <summary>Abstract</summary>
               <p class="card-meta">
@@ -149,104 +120,58 @@
                 The compiler uses memory placement strategies that automatically partition tensors between fast on-chip SRAM and external DRAM based on access patterns, lifetime analysis, and fallback strategies. When SRAM capacity is exceeded, our spilling mechanisms intelligently migrate data while minimizing performance impact. We also employ scheduling and tiling optimizations that decompose large tensor operations into smaller blocks that fit within memory constraints while maximizing data reuse. Additionally, graph-level transformations simplify and canonicalize graphs, eliminate redundant operations, and support both vertical and horizontal fusions to improve compute density.
               </p>
             </details>
-          </div>
-          <div class="item-links">
-            <a href="https://cdp-workshop.github.io/CDP/program/#NEURAL">Program</a>
-          </div>
-        </article>
+          </li>
+        </ul>
       </section>
 
       <section aria-labelledby="ug">
         <h2 id="ug">Undergraduate Work</h2>
 
         <h3>Computer Science</h3>
-        <ul class="item-list">
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">QClang: High-Level Quantum Computing Language</span>
-              <span class="item-meta">Klint Qinami, Connor Abbott (2018)</span>
-            </div>
-            <div class="item-links">
-              <a href="./pdfs/qclang_report.pdf">PDF</a>
-              <a href="https://github.com/KlintQinami/QClang">GitHub</a>
-            </div>
+        <ul class="compact-list">
+          <li>
+            <strong><a href="./pdfs/qclang_report.pdf">QClang: High-Level Quantum Computing Language.</a></strong>
+            Klint Qinami, Connor Abbott (2018). A research prototype language and compiler for expressing quantum programs at a high level.
+            <a class="prominent-link" href="https://github.com/KlintQinami/QClang">GitHub</a>
           </li>
-
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Quantifying Geometric Entanglement: the Linking Number of Two Open Curves</span>
-              <span class="item-meta">Klint Qinami, Eitan Grinspun (2017)</span>
-            </div>
-            <div class="item-links">
-              <a href="./pdfs/link_num_writeup.pdf">PDF</a>
-            </div>
+          <li>
+            <strong><a href="./pdfs/link_num_writeup.pdf">Quantifying Geometric Entanglement: the Linking Number of Two Open Curves.</a></strong>
+            Klint Qinami, Eitan Grinspun (2017). A computational geometry study connecting curve topology with linking number estimation.
           </li>
-
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Blis: Better Language for Image Stuff</span>
-              <span class="item-meta">Connor Abbott, Wendy Pan, Klint Qinami, Jason Vaccario (2017)</span>
-            </div>
-            <div class="item-links">
-              <a href="./pdfs/blis_report.pdf">PDF</a>
-              <a href="https://github.com/KlintQinami/Blis">GitHub</a>
-            </div>
+          <li>
+            <strong><a href="./pdfs/blis_report.pdf">Blis: Better Language for Image Stuff.</a></strong>
+            Connor Abbott, Wendy Pan, Klint Qinami, Jason Vaccario (2017). A small language and toolchain for concise image-processing programs.
+            <a class="prominent-link" href="https://github.com/KlintQinami/Blis">GitHub</a>
           </li>
         </ul>
 
         <h3>Math</h3>
-        <ul class="item-list">
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Algebraic Topology</span>
-            </div>
-            <div class="item-links"><a href="./pdfs/algebraic_topology_notes.pdf">PDF</a></div>
-          </li>
-
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Point-Set Topology</span>
-            </div>
-            <div class="item-links"><a href="./pdfs/topology_notes.pdf">PDF</a></div>
-          </li>
-
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Modern Algebra</span>
-            </div>
-            <div class="item-links"><a href="./pdfs/algebra_notes.pdf">PDF</a></div>
-          </li>
+        <ul class="compact-list">
+          <li><strong><a href="./pdfs/algebraic_topology_notes.pdf">Algebraic Topology.</a></strong> A set of notes on homology, cohomology, and fundamental groups.</li>
+          <li><strong><a href="./pdfs/topology_notes.pdf">Point-Set Topology.</a></strong> Notes covering metric spaces, continuity, and compactness.</li>
+          <li><strong><a href="./pdfs/algebra_notes.pdf">Modern Algebra.</a></strong> Notes on groups, rings, and fields with worked examples.</li>
         </ul>
 
         <h3>Physics</h3>
-        <ul class="item-list">
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Superconductivity Lab Software</span>
-            </div>
-            <div class="item-links">
-              <a href="./pdfs/supercond_manual.pdf">Manual</a>
-              <a href="https://github.com/KlintQinami/Superconductivity-Experiment">GitHub</a>
-            </div>
+        <ul class="compact-list">
+          <li>
+            <strong><a href="./pdfs/supercond_manual.pdf">Superconductivity Lab Software.</a></strong>
+            Control and analysis tools for a superconductivity experiment lab setup.
+            <a class="prominent-link" href="https://github.com/KlintQinami/Superconductivity-Experiment">GitHub</a>
           </li>
-
-          <li class="item">
-            <div class="item-main">
-              <span class="item-title">Quantum Hall Effect Software</span>
-            </div>
-            <div class="item-links">
-              <a href="./pdfs/qhe_manual.pdf">Manual</a>
-              <a href="https://github.com/KlintQinami/Quantum-Hall-Effect-Software">GitHub</a>
-            </div>
+          <li>
+            <strong><a href="./pdfs/qhe_manual.pdf">Quantum Hall Effect Software.</a></strong>
+            Data acquisition and visualization software for quantum Hall measurements.
+            <a class="prominent-link" href="https://github.com/KlintQinami/Quantum-Hall-Effect-Software">GitHub</a>
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="misc">
-        <h2 id="misc">Miscellaneous links</h2>
-        <ul class="dash-list">
-          <li><a href="https://github.com/klintqinami" rel="me">GitHub</a></li>
-          <li><a href="https://math.stackexchange.com/users/318882/klint-qinami?tab=profile">Stack Exchange</a></li>
+        <h2 id="misc">Elsewhere</h2>
+        <ul class="compact-list">
+          <li><a href="https://github.com/klintqinami" rel="me">GitHub</a> - Repos, tools, and source code.</li>
+          <li><a href="https://math.stackexchange.com/users/318882/klint-qinami?tab=profile">Stack Exchange</a> - Math answers and discussions.</li>
         </ul>
       </section>
     </main>

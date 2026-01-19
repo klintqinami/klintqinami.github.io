@@ -150,34 +150,36 @@ p { margin: 0 0 14px 0; color: var(--text); }
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
 }
 
 .topbar-links a {
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--accent);
+  padding: 0;
+  border-radius: 0;
+  border: 0;
   background: transparent;
-  color: var(--accent);
-  font-size: 12px;
-  letter-spacing: 0.03em;
+  color: var(--accent-strong);
+  font-size: 15px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .topbar-links a:hover {
-  border-color: var(--accent-strong);
-  color: var(--accent-strong);
+  color: var(--accent);
   text-decoration: none;
 }
 
 .topbar-links .email-link {
   text-transform: none;
   letter-spacing: 0;
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .topbar-links .sep { color: var(--muted); }
+
 
 main {
   margin-top: 18px;
